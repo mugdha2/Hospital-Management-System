@@ -1,0 +1,20 @@
+* Creating and using a database to store all records *
+
+CREATE DATABASE hospital;
+
+USE hospital;
+
+* Create tables *
+
+CREATE TABLE hospital(id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(100), password VARCHAR(150), hospital_name VARCHAR(50), location VARCHAR(20), contactNo VARCHAR(10), website VARCHAR(100));
+
+CREATE TABLE users(aadharNo BIGINT PRIMARY KEY AUTO_INCREMENT, username VARCHAR(100), email VARCHAR(100), password VARCHAR(150), register_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+CREATE TABLE data(test_id INT AUTO_INCREMENT PRIMARY KEY, test_name TEXT, hospital_name VARCHAR(100), aadharNo BIGINT, date TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+CREATE TABLE bloodbank(bb_id INT AUTO_INCREMENT PRIMARY KEY, bb_name VARCHAR(100), bb_quantity BIGINT, username VARCHAR(100), aadharNo BIGINT, date TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+insert into bloodbank(bb_name, bb_quantity, username, aadharNo) values("Blood", 0, "kem", 1);
+
+
+% Add emergency docotrs list from all hospital %

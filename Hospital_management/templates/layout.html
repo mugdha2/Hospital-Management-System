@@ -1,0 +1,29 @@
+<!DOCTYPE = html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Hospital Management </title>
+
+    <link rel="icon" href="https://static.turbosquid.com/Preview/2014/08/02__00_00_40/doctorssymbol512x512.pngfd431b77-e74c-4aac-9333-89e70b7fa534Large.jpg" type="image/gif" sizes="16x16">
+    <link rel= "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body background="https://images.pexels.com/photos/42273/doctor-medical-medicine-health-42273.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" >
+
+    {% include "includes/_navbar.html" %}
+    <div class="container">
+
+        {% include 'includes/_messages.html' %}
+
+        {% block body %} {% endblock %}
+    </div>
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    <script src="//cdn.ckeditor.com/4.9.0/standard/ckeditor.js"></script>
+    <script type="text/javascript">
+      CKEDITOR.replace('editor')
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+1     P. D. Hinduja       Mahim                 67668181      https://www.hindujahospital.com/          hinduja
+2     KEM                 Parel                 24107000      http://www.kem.edu/         kem
+3     Lokmanya Tilak      Sion                  24076381      http://www.ltmgh.com/frontview/index.aspx
+4     TNMC Nair           Bombay Central        23027000      http://www.tnmcnair.com/
+5     Sir JJ              Byculla               23735555      http://www.gmcjjh.org/
+6     Cooper              VileParle             26207254      http://hbtmc.edu.in/
+7     Saifee              CharniRoad            67570111      https://www.saifeehospital.com/
+8     Tata Memorial       Parel                 24177000      https://tmc.gov.in/
+9     Wadia               Parel                 24146965      http://www.wadiahospitals.org/
+10    SRCC Children's     Mahalaxmi             20080208      https://www.narayanahealth.org/hospitals/mumbai/srcc-childrens-hospital

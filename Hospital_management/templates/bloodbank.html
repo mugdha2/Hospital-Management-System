@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1> Blood Bank </h1>
+
+  <hr>
+
+  <table class="table table-hover table-stripped">
+    <tr>
+      <th>Blood Parameter</th>
+      <th>Quantity</th>
+      <th>Hospital Name</th>
+      <th>Contact Number</th>
+      <th>Website</th>
+      <th></th>
+    </tr>
+
+    {% for bb in bloodbanks %}
+      <tr>
+        <td>{{bb.bb_name}}</td>
+        <td>{{bb.bb_quantity}}</td>
+        <td>{{bb.hospital_name}}</td>
+        <td>{{bb.contactNo}}</td>
+        <td> <a target="_blank" href="{{bb.website}}"> {{bb.website}}</td>
+      </tr>
+    {% endfor %}
+
+  </table>
+
+{% endblock %}

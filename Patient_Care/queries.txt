@@ -1,0 +1,16 @@
+* Creating and using a database to store all records *
+
+CREATE DATABASE hospital;
+
+USE hospital;
+
+* Create tables *
+
+CREATE TABLE hospital(id INT AUTO_INCREMENT PRIMARY KEY, hospital_name VARCHAR(50), location VARCHAR(20), contactNo VARCHAR(10), website VARCHAR(100));
+
+CREATE TABLE users(aadharNo BIGINT PRIMARY KEY AUTO_INCREMENT, username VARCHAR(100), email VARCHAR(100), password VARCHAR(50), register_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+CREATE TABLE data(test_id INT AUTO_INCREMENT PRIMARY KEY, test_name VARCHAR(100), hospital_name VARCHAR(100), aadharNo BIGINT);
+
+* Adding data to hopital *
+INSERT INTO hospital VALUES (1, "KEM", "Parel", "24107000", "http://www.kem.edu/"), (2, "LokmanyaTilak", "Sion", "24076381", "http://www.ltmgh.com/frontview/index.aspx" ), (3, "Nair", "BombayCentral", "23027000", "http://www.tnmcnair.com/" ), (4, "SirJJ", "Byculla", "23735555", "http://www.gmcjjh.org/" ), (5, "Cooper", "VileParle", "26207254", "http://hbtmc.edu.in/" ), (6, "Saifee", "CharniRoad", "67570111", "https://www.saifeehospital.com/"), (7, "Hinduja", "Mahim", "67668181", "https://www.hindujahospital.com/"), (8, "TataMemorial", "Parel", "24177000", "https://tmc.gov.in/"), (9, "Wadia", "Parel", "24146965", "http://www.wadiahospitals.org/");

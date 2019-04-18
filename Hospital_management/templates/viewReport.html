@@ -1,0 +1,15 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1>{{report.test_name}}</h1>
+  <h6>Aadhar number of patient: {{report.aadharNo}}</h6>
+  <h6>Test date: {{report.date_of_test}}</h6>
+
+  <hr>
+  <div>
+    {{report.test_data | safe }}
+  </div>
+
+
+{% endblock %}
